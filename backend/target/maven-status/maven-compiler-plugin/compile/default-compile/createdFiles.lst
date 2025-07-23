@@ -1,0 +1,4 @@
+com\ihmsumerpur\contact\ContactForm.class
+com\ihmsumerpur\contact\ContactController.class
+com\ihmsumerpur\contact\ContactRepository.class
+com\ihmsumerpur\IhmSumerpurApplication.class
