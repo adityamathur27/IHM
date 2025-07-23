@@ -1,0 +1,37 @@
+.downloads {
+  background: #fff;
+  margin: 2.5rem auto;
+  padding: 2.5rem 1.5rem;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(20,55,90,0.10);
+  text-align: center;
+}
+.downloads h2 {
+  color: #14375a;
+  font-size: 2.2rem;
+  margin-bottom: 1.2rem;
+}
+.downloads ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
+}
+.downloads li {
+  background: #f5f6fa;
+  margin: 0.7rem 0;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(20,55,90,0.07);
+  text-align: left;
+  font-size: 1.08rem;
+}
+.downloads a {
+  color: #1976d2;
+  text-decoration: underline;
+  font-weight: 500;
+}
+.downloads a:hover {
+  color: #ffd600;
+}
