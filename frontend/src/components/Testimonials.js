@@ -4,11 +4,11 @@ import './Testimonials.css';
 const testimonials = [
   {
     name: 'Amit Sharma',
-    text: 'IHM Sumerpur gave me the skills and confidence to excel in the hospitality industry. The faculty and facilities are top-notch!'
+    text: 'Food Craft Institute Sumerpur gave me the skills and confidence to excel in the hospitality industry. The faculty and facilities are top-notch!'
   },
   {
     name: 'Priya Singh',
-    text: 'The placement support and hands-on training at IHM Sumerpur helped me land my dream job at a 5-star hotel.'
+    text: 'The placement support and hands-on training at Food Craft Institute Sumerpur helped me land my dream job at a 5-star hotel.'
   }
 ];
 

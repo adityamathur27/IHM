@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import img1 from '../assets/images/IMG-20210611-WA0031.jpg';
-import img2 from '../assets/images/IMG-20210611-WA0032__01.jpg';
-import img3 from '../assets/images/IMG-20210625-WA0088.jpg';
-import img4 from '../assets/images/IMG-20210812-WA0010.jpg';
+import img1 from '../assets/images/Front_View.jpg';
+import img2 from '../assets/images/Side_View.jpg';
+import img3 from '../assets/images/lecture.jpg';
+import img4 from '../assets/images/Mess.jpg';
 
 const images = [
-  { src: img1, caption: 'Campus View' },
-  { src: img2, caption: 'Student Activity' },
-  { src: img3, caption: 'Event Day' },
+  { src: img1, caption: 'Campus View Front' },
+  { src: img2, caption: 'Campus View Side' },
+  { src: img3, caption: 'Discussion' },
   { src: img4, caption: 'Lab Session' },
 ];
 

@@ -24,3 +24,7 @@
 .footer-links a:hover {
   color: #ffd600;
 }
+.footer-external a{
+  color: aliceblue;
+  text-decoration: none;
+}

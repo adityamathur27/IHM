@@ -5,11 +5,26 @@
   display: inline-block;
   vertical-align: middle;
 }
-.ticker-move {
-  display: inline-block;
-  white-space: nowrap;
-  animation: ticker 18s linear infinite;
-}
+  .ticker-move {
+    display: inline-block;
+    white-space: nowrap;
+    animation: ticker 18s linear infinite;
+  }
+
+  .ticker-move:hover {
+    animation-play-state: paused;
+  }
+
+  .news-link {
+    color: #1976d2;
+    text-decoration: underline;
+    font-weight: 500;
+    transition: color 0.2s;
+  }
+  .news-link:hover {
+    color: #14375a;
+    text-decoration: underline;
+  }
 @keyframes ticker {
   0% { transform: translateX(100%); }
   100% { transform: translateX(-100%); }

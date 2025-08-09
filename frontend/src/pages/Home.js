@@ -11,8 +11,8 @@ import Testimonials from '../components/Testimonials';
 function Home() {
   return (
     <>
-      <HomeSlider />
       <NewsTicker />
+      <HomeSlider />      
       <Hero />
       <NoticeBoard />
       <Placement />

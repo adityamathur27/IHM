@@ -7,7 +7,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-content">
         <div>
-          <strong>IHM Sumerpur</strong> &copy; {new Date().getFullYear()} | All Rights Reserved
+          <strong>Food Craft Institute Sumerpur</strong> &copy; {new Date().getFullYear()} | All Rights Reserved
         </div>
         <div className="footer-links">
           <a href="/courses">Courses</a>
@@ -16,9 +16,9 @@ function Footer() {
           <a href="/contact">Contact</a>
         </div>
         <div className="footer-contact">
-          <p><b>Address:</b> Pali Road, Sumerpur, Rajasthan, India</p>
-          <p><b>Email:</b> info@ihmsumerpur.ac.in</p>
-          <p><b>Phone:</b> +91-XXXXXXXXXX</p>
+          <p><b>Address:</b>Opp. 132 kv GSS, National Highway Bypass, Jakha Nagar, Sumerpur, Pali, Rajasthan.</p>
+          <p><b>Email:</b> fcisumerpur@gmail.com</p>
+          <p><b>Phone:</b> 02933-255030, 9413592614, 9694994586, 9680675153</p>
         </div>
         <div className="footer-external">
           <a href="http://nchm.gov.in/" target="_blank" rel="noopener noreferrer">NCHMCT</a> |

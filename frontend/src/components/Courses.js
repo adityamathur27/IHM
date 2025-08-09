@@ -1,38 +1,31 @@
 import React from 'react';
 import './Courses.css';
-import bscImg from '../assets/images/IMG_20210611_153835__01.jpg';
-import diplomaImg from '../assets/images/IMG_20210622_140252.jpg';
-import craftImg from '../assets/images/IMG_20210622_140322.jpg';
-import skillImg from '../assets/images/IMG_20210622_140607__01__01.jpg';
 
 function Courses() {
   return (
     <section className="courses" id="courses">
       <h2>Courses Offered</h2>
+      <div style={{maxWidth:'900px',margin:'0 auto 2rem auto',fontSize:'1.08rem',color:'#222',lineHeight:'1.7',background:'#f4f8fb',padding:'1.5rem 1.2rem',borderRadius:'8px',boxShadow:'0 1px 8px rgba(20,55,90,0.06)'}}>
+        <b>Insight into Teaching & Learning at Food Craft Institute Sumerpur:</b><br/><br/>
+        At Food Craft Institute Sumerpur, our teaching philosophy is rooted in a blend of practical exposure, industry-driven curriculum, and holistic student development. We believe that hospitality education is not just about acquiring technical skills, but also about nurturing the right attitude, communication, and adaptability required in the dynamic world of hospitality and tourism. <br/><br/>
+        Our faculty comprises seasoned professionals and passionate educators who bring real-world experience into the classroom. Each course is meticulously designed to balance theoretical knowledge with hands-on training. Students spend significant time in state-of-the-art kitchens, training restaurants, front office labs, and housekeeping suites, simulating real hotel environments. This immersive approach ensures that our graduates are job-ready from day one.<br/><br/>
+        Soft skills, personality development, and communication are integral parts of our teaching. We conduct regular sessions on grooming, etiquette, teamwork, and leadership, preparing students for both national and international hospitality careers. Our placement cell works tirelessly to connect students with leading hotels, resorts, airlines, and cruise lines, ensuring excellent job opportunities upon graduation.<br/><br/>
+        The learning environment at FCI Sumerpur is inclusive, supportive, and vibrant. We celebrate diversity and foster a culture of respect, discipline, and innovation. Our faculty mentors guide students not only academically but also in personal growth, career planning, and entrepreneurship. <br/><br/>
+        In summary, teaching at Food Craft Institute Sumerpur is a transformative journey that equips students with technical expertise, professional values, and a global outlook. We take pride in shaping future leaders of the hospitality industry who are competent, compassionate, and ready to excel in any setting.<br/><br/>
+        <i>(This insight reflects our commitment to delivering quality education and preparing students for rewarding careers in hospitality and allied sectors.)</i>
+      </div>
       <div className="courses-list">
         <div className="course-card">
-          <img src={bscImg} alt="B.Sc H&HA" />
-          <a href="/courses/bsc-hha" className="course-link">
-          <h3>B.Sc H&HA</h3></a>
-          <p>Bachelor of Science in Hospitality & Hotel Administration (3 Years)</p>
-        </div>
-        <div className="course-card">
-          <img src={diplomaImg} alt="Diploma Courses" />
           <a href="/courses/diploma" className="course-link">
-          <h3>Diploma Courses</h3></a>
-          <p>Diploma in Hotel Management (1.5 Years) - Food Production, Bakery, F&B Services, Front Office, Housekeeping</p>
+            <h3>Diploma Courses</h3>
+          </a>
+          <p>Short-term, industry-focused diploma programs in Food Production, Food & Beverage Service, and Front Office. <a href="/courses/diploma" className="read-more-link">Read more</a></p>
         </div>
         <div className="course-card">
-          <img src={craftImg} alt="Craftsmanship Program" />
-          <a href="/courses/craftsmanship" className="course-link">
-          <h3>Craftsmanship Program</h3></a>
-          <p>6 months to 1 year programs in Food Production and F&B Service for 10th pass students</p>
-        </div>
-        <div className="course-card">
-          <img src={skillImg} alt="Skill Development" />
           <a href="/courses/skill-development" className="course-link">
-          <h3>Skill Development</h3></a>
-          <p>Short-term, fee-less courses for skill, semi-skilled, and unskilled aspirants (HSRT, Guide, Cooks, Stewards, etc.)</p>
+            <h3>Skill Development</h3>
+          </a>
+          <p>Short-term, fee-less courses for skilled, semi-skilled, and unskilled aspirants (HSRT, Guide, Cooks, Stewards, etc.). <a href="/courses/skill-development" className="read-more-link">Read more</a></p>
         </div>
       </div>
     </section>

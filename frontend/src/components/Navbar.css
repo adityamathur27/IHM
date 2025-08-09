@@ -1,23 +1,23 @@
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
   align-items: center;
   background: #1976d2;
   color: #fff;
   padding: 1rem 2rem;
+  row-gap: 2rem;
+  column-gap: 6rem;
 }
 
 .navbar {
   position: sticky;
   top: 0;
   z-index: 100;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background: #14375a;
   color: #fff;
   padding: 1rem 2.5rem;
   box-shadow: 0 2px 12px rgba(20,55,90,0.08);
+  overflow: visible;
 }
 .navbar-logo {
   font-size: 2rem;
@@ -36,7 +36,8 @@
   gap: 2rem;
   margin: 0;
   padding: 0;
-  align-items: center;
+  align-items:center;
+  overflow: visible;
 }
 .navbar-links li a, .navbar-links li span {
   color: #fff;
@@ -53,26 +54,30 @@
 }
 .dropdown {
   position: relative;
+  cursor: pointer;
+
 }
 .dropdown-menu {
-  position: absolute;
-  top: 2.5rem;
+position: absolute;
+  display: none;
+  top: 100%;
   left: 0;
   background: #fff;
   color: #14375a;
   min-width: 210px;
   box-shadow: 0 4px 16px rgba(20,55,90,0.15);
+  border: 1px solid #e0e0e0;
   border-radius: 8px;
-  z-index: 1000;
+  z-index: 2000;
   list-style-type: none;
   padding: 0.5rem 0;
   animation: fadeIn 0.5s;
 }
 .dropdown-menu li {
   padding: 0.6rem 1.5rem;
-/* overflow: hidden;
-text-overflow: ellipsis;
-white-space: nowrap; */
+/*overflow: hidden;*/
+/*text-overflow: ellipsis;*/
+white-space: nowrap;
 }
 .dropdown-menu li a {
   color: #14375a;
@@ -81,9 +86,22 @@ white-space: nowrap; */
   font-size: 1.05rem;
   border-radius: 4px;
 }
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
 .dropdown-menu li a:hover {
   background: #e3f2fd;
   color: #1976d2;
+}
+.dropdown-menu .dropdown {
+  position: relative;
+}
+
+.dropdown-menu .dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-left: 1px;
+  border-radius: 8px;
 }
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(-10px); }

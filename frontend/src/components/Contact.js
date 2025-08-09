@@ -1,22 +1,27 @@
 
+
+
+
+
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 import { useNavigate } from 'react-router-dom';
 import './Contact.css';
 
 function Contact() {
+  const navigate = useNavigate();
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [errors, setErrors] = useState({});
-  const navigate = useNavigate();
 
   const validate = () => {
     const errs = {};
-    if (!form.name.trim()) errs.name = 'Name is required';
+    if (!form.name.trim()) errs.name = 'Name is required.';
     if (!form.email.trim()) {
-      errs.email = 'Email is required';
+      errs.email = 'Email is required.';
     } else if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(form.email)) {
-      errs.email = 'Invalid email address';
+      errs.email = 'Invalid email address.';
     }
-    if (!form.message.trim()) errs.message = 'Message is required';
+    if (!form.message.trim()) errs.message = 'Message is required.';
     return errs;
   };
 
@@ -25,35 +30,40 @@ function Contact() {
     setErrors({ ...errors, [e.target.name]: '' });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
     const errs = validate();
     if (Object.keys(errs).length > 0) {
       setErrors(errs);
       return;
     }
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
-      });
-      if (!response.ok) throw new Error('Failed to submit');
-      window.alert('Successfully submitted!');
+    emailjs.send(
+      'service_eh464j4', // Replace with your EmailJS Service ID
+      'template_xxsmrk8', // Replace with your EmailJS Template ID
+      {
+        from_name: form.name,
+        from_email: form.email,
+        message: form.message,
+      },
+      'B2sB-ke3Bife25Xeo' // Replace with your EmailJS Public Key
+    )
+    .then((result) => {
+      window.alert('Message sent successfully!');
+      setForm({ name: '', email: '', message: '' });
       navigate('/');
-    } catch (err) {
-      window.alert('Submission failed. Please try again.');
-    }
+    }, (error) => {
+      window.alert('Failed to send message. Please try again.');
+    });
   };
 
   return (
     <section className="contact" id="contact">
       <h2>Contact Us</h2>
       <div className="contact-info">
-        <p><strong>State Institute of Hotel Management, Sumerpur</strong></p>
-        <p>Pali Road, Sumerpur, Rajasthan, India</p>
-        <p>Email: info@ihmsumerpur.ac.in</p>
-        <p>Phone: +91-XXXXXXXXXX</p>
+        <p><strong>FCI Sumerpur</strong></p>
+        <p>Near Power House, Jawal Road, Sumerpur, Dist. Pali (Raj.) - 306902</p>
+        <p>Email: fcisumerpur@gmail.com</p>
+        <p>Phone: 02933-255030, 9413592614, 9694994586, 9680675153</p>
       </div>
       <form className="contact-form" onSubmit={handleSubmit} noValidate>
         <input

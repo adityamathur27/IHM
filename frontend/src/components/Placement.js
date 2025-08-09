@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import './Placement.css';
 import partner1 from '../assets/images/IMG_20210622_141658.jpg';
-import partner2 from '../assets/images/IMG_20210622_141833.jpg';
+import partner2 from '../assets/images/IMG_20210622_141658.jpg';
 import partner3 from '../assets/images/IMG20211229130549.jpg';
 import partner4 from '../assets/images/IMG20211229130356.jpg';
 

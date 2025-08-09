@@ -1,6 +1,6 @@
 import React from 'react';
 import './NoticeBoard.css';
-import noticePDF from '../assets/pdfs/Diploma Admission Form.pdf';
+import noticePDF from '../assets/pdfs/Admission_Form.pdf';
 
 function NoticeBoard() {
   return (

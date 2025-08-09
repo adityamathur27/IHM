@@ -1,22 +1,34 @@
-import React, { useState } from 'react';
-import './HomeSlider.css';
-import img1 from '../assets/images/IMG20211229125345.jpg';
-import img2 from '../assets/images/IMG20211229130330.jpg';
-import img3 from '../assets/images/IMG20211229130356.jpg';
+import React, { useState, useEffect } from 'react';
+import Carousel from 'react-bootstrap/Carousel';
+import img1 from '../assets/images/Front_View.jpg';
+import img2 from '../assets/images/Side_View.jpg';
+import img3 from '../assets/images/lecture.jpg';
+import img4 from '../assets/images/Mess.jpg';
 
-const images = [img1, img2, img3];
+const images = [
+  { src: img1, caption: 'Campus View Front' },
+  { src: img2, caption: 'Campus View Side' },
+  { src: img3, caption: 'Lab Session 1' },
+  { src: img4, caption: 'Lab Session 2' },
+];
 
 function HomeSlider() {
-  const [current, setCurrent] = useState(0);
-  const nextSlide = () => setCurrent((current + 1) % images.length);
-  const prevSlide = () => setCurrent((current - 1 + images.length) % images.length);
-
+  const [index, setIndex] = useState(0);
+  useEffect(() => {
+    const timer = setInterval(() => setIndex(i => (i + 1) % images.length), 3500);
+    return () => clearInterval(timer);
+  }, []);
   return (
-    <div className="slider">
-      <button className="slider-btn left" onClick={prevSlide}>&lt;</button>
-      <img src={images[current]} alt="slider" className="slider-img" />
-      <button className="slider-btn right" onClick={nextSlide}>&gt;</button>
-    </div>
+    <Carousel activeIndex={index} onSelect={setIndex} fade interval={null}>
+      {images.map((img, idx) => (
+        <Carousel.Item key={idx}>
+          <img className="d-block w-100" src={img.src} alt={img.caption} style={{maxHeight:'620px',objectFit:'cover'}} />
+          <Carousel.Caption>
+            <h5>{img.caption}</h5>
+          </Carousel.Caption>
+        </Carousel.Item>
+      ))}
+    </Carousel>
   );
 }
 

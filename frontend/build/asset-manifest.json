@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.24707f58.css",
+    "main.js": "/static/js/main.a9eb8554.js",
+    "static/media/Kitchen.jpg": "/static/media/Kitchen.d3a65175a8105264f39c.jpg",
+    "static/media/IMG_20210622_141658.jpg": "/static/media/IMG_20210622_141658.536b73585f1e0b67dc85.jpg",
+    "static/media/IMG20211229130549.jpg": "/static/media/IMG20211229130549.a233bafdaaa80b8cfe6c.jpg",
+    "static/media/IMG_20210611_153835__01.jpg": "/static/media/IMG_20210611_153835__01.34f244ab19be311a6f48.jpg",
+    "static/media/IMG20211229130356.jpg": "/static/media/IMG20211229130356.4dc3f56573ba801b4219.jpg",
+    "static/media/Mess.jpg": "/static/media/Mess.0747834af2fb712e7f4c.jpg",
+    "static/media/Side_View.jpg": "/static/media/Side_View.bb525be807b404ce4f46.jpg",
+    "static/media/IMG_20210622_141052.jpg": "/static/media/IMG_20210622_141052.5d198b011589bd31b669.jpg",
+    "static/media/Front_View.jpg": "/static/media/Front_View.39305a27f9aba297dcbe.jpg",
+    "static/media/Admission_Form.pdf": "/static/media/Admission_Form.3b5a96c3537ce6585a53.pdf",
+    "static/media/Academic_Calendar_2025-26.pdf": "/static/media/Academic_Calendar_2025-26.185bf7fba457f72fe59a.pdf",
+    "static/media/FCI Logo.jpg": "/static/media/FCI Logo.99648bed924c355c24a1.jpg",
+    "static/media/Skill_Development.jpeg": "/static/media/Skill_Development.47bab11752003ae4aa9f.jpeg",
+    "static/media/Rina Gour.jpeg": "/static/media/Rina Gour.47ebb726e144aa553724.jpeg",
+    "static/media/Yuvraj.jpeg": "/static/media/Yuvraj.ae012949b4281a16645d.jpeg",
+    "static/media/Bharat Kumar.jpeg": "/static/media/Bharat Kumar.42c28b182870b5d8f116.jpeg",
+    "static/media/Bhagwat Singh.jpeg": "/static/media/Bhagwat Singh.e8b6ce34adc8856567c4.jpeg",
+    "static/media/Alpesh Kumar.jpeg": "/static/media/Alpesh Kumar.8e3698b0b1448ec632a0.jpeg",
+    "index.html": "/index.html",
+    "main.24707f58.css.map": "/static/css/main.24707f58.css.map",
+    "main.a9eb8554.js.map": "/static/js/main.a9eb8554.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24707f58.css",
+    "static/js/main.a9eb8554.js"
+  ]
+}

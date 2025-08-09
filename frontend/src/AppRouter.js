@@ -4,19 +4,21 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import AccessibilityTools from './components/AccessibilityTools';
 import Home from './pages/Home';
-import About from './pages/About';
-import CoursesPage from './pages/CoursesPage';
-
-import Downloads from './pages/Downloads';
-import Principal from './pages/Principal';
+import About from './pages/AboutUs/js/AboutUs';
+import PrincipalMessage from './pages/AboutUs/js/PrincipalMessage';
+import WhyUs from './pages/AboutUs/js/WhyUs';
+import OverviewHistory from './pages/AboutUs/js/OverviewHistory';
+import VisionObjective from './pages/AboutUs/js/Vision&Objective';
+import OurStaff from './pages/AboutUs/js/OurStaff';
+import GeneralRules  from './pages/StudentSection/js/GeneralRules';
+import CoursesPage from './pages/Courses/js/AllCourses';
 import ContactPage from './pages/ContactPage';
 import Gallery from './pages/Gallery';
-
-
-import BscHHA from './pages/BscHHA';
-import Diploma from './pages/Diploma';
-import Craftsmanship from './pages/Craftsmanship';
-import SkillDevelopment from './pages/SkillDevelopment';
+import Diploma from './pages/Courses/Diploma';
+import FoodProduction from './pages/Courses/js/FoodProduction';
+import FoodBeverageService from './pages/Courses/js/FoodBeverageService';
+import FrontOffice from './pages/Courses/js/FrontOffice';
+import SkillDevelopment from './pages/Courses/js/SkillDevelopment';
 
 
 function AppRouter() {
@@ -26,15 +28,21 @@ function AppRouter() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/courses" element={<CoursesPage />} />
-        <Route path="/downloads" element={<Downloads />} />
-        <Route path="/principal" element={<Principal />} />
+        <Route path="/principalMessage" element={<PrincipalMessage />} />
+        <Route path="/whyUs" element={<WhyUs/>}/>
+        <Route path='/overviewHistory' element={<OverviewHistory />} />
+        <Route path="/visionObjective" element={<VisionObjective />} />
+        <Route path="/ourStaff" element={<OurStaff />} /> {/* Done till now*/}
+        <Route path="/general-rules" element={<GeneralRules />} />
         <Route path="/contact" element={<ContactPage />} />
         <Route path="/gallery" element={<Gallery />} />
-        <Route path="/courses/bsc-hha" element={<BscHHA />} />
         <Route path="/courses/diploma" element={<Diploma />} />
-        <Route path="/courses/craftsmanship" element={<Craftsmanship />} />
+        <Route path="/diploma/FoodProduction" element={<FoodProduction />} />
+        <Route path="/diploma/FoodBeverageService" element={<FoodBeverageService />} />
+        <Route path="/diploma/FrontOffice" element={<FrontOffice />} />
         <Route path="/courses/skill-development" element={<SkillDevelopment />} />
       </Routes>
       <Footer />

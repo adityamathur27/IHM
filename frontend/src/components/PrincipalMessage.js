@@ -12,7 +12,7 @@ function PrincipalMessage() {
           <p>
             "Training is a strong part of student’s professional development and this complements our high quality academic programme. Students learn a rich portfolio of skills in Service, Bar, Kitchen, Housekeeping, Front Office, Management, Teamwork, and Personal Development. Our experience is that it develops a strong professional attitude in students, which is valued by future employers."
           </p>
-          <p className="principal-name">– Principal, IHM Sumerpur</p>
+          <p className="principal-name">– Principal, Food Craft Institute Sumerpur</p>
         </div>
       </div>
     </section>
