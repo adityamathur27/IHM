@@ -3,7 +3,7 @@ import React from 'react';
 import Hero from '../components/Hero';
 import HomeSlider from '../components/HomeSlider';
 import NewsTicker from '../components/NewsTicker';
-import NoticeBoard from '../components/NoticeBoard';
+import Gallery from '../components/GalleryCarousel';
 import Placement from '../components/Placement';
 import Testimonials from '../components/Testimonials';
 
@@ -14,7 +14,7 @@ function Home() {
       <NewsTicker />
       <HomeSlider />      
       <Hero />
-      <NoticeBoard />
+      <Gallery />
       <Placement />
       <Testimonials />
     </>

@@ -20,9 +20,9 @@ function About() {
           </tr>
         </thead>
         <tbody>
-          <tr><td>1</td><td>Diploma in Food Production</td><td>1-1/2 years</td><td>40</td></tr>
-          <tr><td>2</td><td>Diploma in Food and Beverage Service</td><td>1-1/2 years</td><td>40</td></tr>
-          <tr><td>3</td><td>Diploma in Front Office</td><td>1-1/2 years</td><td>40</td></tr>
+          <tr><td>1</td><td>Diploma in Food Production</td><td>1-1/2 years</td><td>30</td></tr>
+          <tr><td>2</td><td>Diploma in Food and Beverage Service</td><td>1-1/2 years</td><td>30</td></tr>
+          <tr><td>3</td><td>Diploma in Front Office</td><td>1-1/2 years</td><td>30</td></tr>
         </tbody>
       </table>
       <p>The institute additionally runs Skill Development Programs sponsored by Central Govt. such as Skill Testing Certification Course, Hunar Se Rozgar Tak Programme (Multi-cuisine cook), Hunar Se Rozgar Tak Programme (F&B Steward).</p>

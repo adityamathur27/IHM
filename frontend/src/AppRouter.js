@@ -19,6 +19,7 @@ import FoodProduction from './pages/Courses/js/FoodProduction';
 import FoodBeverageService from './pages/Courses/js/FoodBeverageService';
 import FrontOffice from './pages/Courses/js/FrontOffice';
 import SkillDevelopment from './pages/Courses/js/SkillDevelopment';
+import AdmissionButton  from './components/AdmissionButton';
 
 
 function AppRouter() {
@@ -31,6 +32,7 @@ function AppRouter() {
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/courses" element={<CoursesPage />} />
+        <Route path="/admissions" element={<AdmissionButton />} />
         <Route path="/principalMessage" element={<PrincipalMessage />} />
         <Route path="/whyUs" element={<WhyUs/>}/>
         <Route path='/overviewHistory' element={<OverviewHistory />} />

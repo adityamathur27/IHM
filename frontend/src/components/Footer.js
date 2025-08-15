@@ -10,8 +10,8 @@ function Footer() {
           <strong>Food Craft Institute Sumerpur</strong> &copy; {new Date().getFullYear()} | All Rights Reserved
         </div>
         <div className="footer-links">
-          <a href="/courses">Courses</a>
-          <a href="/downloads">Downloads</a>
+          <a href="/home">Home</a>
+          <a href="/courses">Courses</a>          
           <a href="/gallery">Gallery</a>
           <a href="/contact">Contact</a>
         </div>

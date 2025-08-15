@@ -131,3 +131,18 @@ white-space: nowrap;
     align-items: flex-start;
   }
 }
+.courses-menu {
+  left: 0;
+  right: auto;
+  top: 100%;
+}
+
+/* On large screens (desktop), float to the left of parent */
+@media (min-width: 601px) {
+  .courses-menu {
+    position: absolute;
+    top: 100%;
+    right: 20%; /* Push it to the left of the parent */
+    left: auto;
+  }
+}

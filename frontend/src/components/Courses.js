@@ -21,12 +21,6 @@ function Courses() {
           </a>
           <p>Short-term, industry-focused diploma programs in Food Production, Food & Beverage Service, and Front Office. <a href="/courses/diploma" className="read-more-link">Read more</a></p>
         </div>
-        <div className="course-card">
-          <a href="/courses/skill-development" className="course-link">
-            <h3>Skill Development</h3>
-          </a>
-          <p>Short-term, fee-less courses for skilled, semi-skilled, and unskilled aspirants (HSRT, Guide, Cooks, Stewards, etc.). <a href="/courses/skill-development" className="read-more-link">Read more</a></p>
-        </div>
       </div>
     </section>
   );

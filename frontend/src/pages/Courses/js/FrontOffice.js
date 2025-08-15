@@ -21,8 +21,9 @@ function FrontOffice() {
           <h3 style={{color:'#1976d2'}}>Eligibility & Duration</h3>
           <ul style={{marginLeft:'1.2rem',marginBottom:0}}>
             <li>12th Pass (Art/Commerce/Science)</li>
-            <li>Age: 18-25 years</li>
+            <li>Age: No Age Bar</li>
             <li>Duration: 1.5 years (full-time)</li>
+            <li>4 Seats are Reserved in each trade for ST candidates of TSP area</li>
           </ul>
         </div>
         <div style={{marginBottom:'1.2rem'}}>

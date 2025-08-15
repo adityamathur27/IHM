@@ -1,38 +1,76 @@
+import React, { useState, useEffect } from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import "./Placement.css";
 
-import React, { useState } from 'react';
-import './Placement.css';
-import partner1 from '../assets/images/IMG_20210622_141658.jpg';
-import partner2 from '../assets/images/IMG_20210622_141658.jpg';
-import partner3 from '../assets/images/IMG20211229130549.jpg';
-import partner4 from '../assets/images/IMG20211229130356.jpg';
+// Auto-import logos
+function importAll(r) {
+  return r.keys().map(r);
+}
+const logos = importAll(
+  require.context("../assets/images/Placement Partners", false, /\.(png|jpe?g|svg)$/)
+);
 
-const partners = [
-  { img: partner1, name: 'Taj Hotels' },
-  { img: partner2, name: 'Oberoi Hotels' },
-  { img: partner3, name: 'ITC Hotels' },
-  { img: partner4, name: 'Radisson Blu' },
-];
+export default function PlacementPartners() {
+  const logosPerPage = 4;
+  const totalPages = Math.ceil(logos.length / logosPerPage);
 
-function Placement() {
-  const [current, setCurrent] = useState(0);
-  const next = () => setCurrent((current + 1) % partners.length);
-  const prev = () => setCurrent((current - 1 + partners.length) % partners.length);
+  const [currentPage, setCurrentPage] = useState(0);
+
+  // Auto-slide
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentPage((prev) => (prev + 1) % totalPages);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, [totalPages]);
+
+  const prevPage = () => {
+    setCurrentPage((prev) => (prev - 1 + totalPages) % totalPages);
+  };
+
+  const nextPage = () => {
+    setCurrentPage((prev) => (prev + 1) % totalPages);
+  };
+
+  const startIndex = currentPage * logosPerPage;
+  const visibleLogos = logos.slice(startIndex, startIndex + logosPerPage);
+
   return (
-    <section className="placement" id="placement">
-      <h2>Placement Partners</h2>
-      <div className="placement-carousel">
-        <button className="placement-btn left" onClick={prev}>&lt;</button>
-        <div className="placement-logo-card">
-          <img src={partners[current].img} alt={partners[current].name} />
-          <div className="placement-partner-name">{partners[current].name}</div>
+    <div className="placement-wrapper">
+      <h2 className="placement-heading">Placement Partners</h2>
+
+      <div className="placement-container">
+        <button className="placement-nav-btn left" onClick={prevPage} aria-label="Previous">
+          <FaChevronLeft />
+        </button>
+
+        <div className="placement-grid">
+          {visibleLogos.map((logo, index) => (
+            <div className="placement-card" key={index}>
+              <img
+                src={logo}
+                alt={`Placement Partner ${index + 1}`}
+                className="placement-logo"
+              />
+            </div>
+          ))}
         </div>
-        <button className="placement-btn right" onClick={next}>&gt;</button>
+
+        <button className="placement-nav-btn right" onClick={nextPage} aria-label="Next">
+          <FaChevronRight />
+        </button>
       </div>
-      <div className="placement-info">
-        <p>Our students are placed in leading hotels and hospitality organizations across India.</p>
+
+      {/* Dot Navigation */}
+      <div className="dot-container">
+        {Array.from({ length: totalPages }).map((_, index) => (
+          <span
+            key={index}
+            className={`dot ${currentPage === index ? "active" : ""}`}
+            onClick={() => setCurrentPage(index)}
+          ></span>
+        ))}
       </div>
-    </section>
+    </div>
   );
 }
-
-export default Placement;

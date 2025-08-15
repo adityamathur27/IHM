@@ -61,7 +61,7 @@ function Contact() {
       <h2>Contact Us</h2>
       <div className="contact-info">
         <p><strong>FCI Sumerpur</strong></p>
-        <p>Near Power House, Jawal Road, Sumerpur, Dist. Pali (Raj.) - 306902</p>
+        <p>Opp. 132 kv GSS, National Highway Bypass, Jakha Nagar, Sumerpur, Pali, Rajasthan.</p>
         <p>Email: fcisumerpur@gmail.com</p>
         <p>Phone: 02933-255030, 9413592614, 9694994586, 9680675153</p>
       </div>

@@ -66,7 +66,7 @@ function Navbar() {
                       </a>
                     </li>
                     <li>
-                      <a
+                      <a 
                         href={FoodBeverageService}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -147,12 +147,12 @@ function Navbar() {
         <li className="dropdown" onMouseEnter={() => handleDropdown('courses')} onMouseLeave={closeDropdown}>
           <span>Courses ▾</span>
           {openDropdown === 'courses' && (
-            <ul className="dropdown-menu">
-              <li><Link to="/courses">All Courses</Link></li>
+            <ul className="dropdown-menu courses-menu">
+              {/* <li><Link to="/courses">All Courses</Link></li> */}
               <li><Link to="/diploma/FoodProduction">Diploma in Food Production</Link></li>
-              <li><Link to="/diploma/FoodBeverageService">Diploma in Food and Beverage Service</Link></li>
+              <li><Link to="/diploma/FoodBeverageService">Diploma in Food & Beverage Service</Link></li>
               <li><Link to="/diploma/FrontOffice">Diploma in Front Office</Link></li>
-              <li><Link to="/courses/skill-development">Skill Development</Link></li>
+              {/* <li><Link to="/courses/skill-development">Skill Development</Link></li> */}
             </ul>
           )}
         </li>

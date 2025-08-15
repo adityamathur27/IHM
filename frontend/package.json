@@ -1,5 +1,5 @@
 {
-  "name": "ihm-sumerpur-frontend",
+  "name": "fci-sumerpur-frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,6 +11,8 @@
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18.2.0",
     "react-i18next": "^11.18.6",
+    "react-icons": "^5.5.0",
+    "react-image-gallery": "^1.4.0",
     "react-router-dom": "^6.30.1",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.0"
